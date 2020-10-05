@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,12 @@
 		8EA45D96252B924300429311 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA45D81252B924200429311 /* ContentView.swift */; };
 		8EA45D97252B924300429311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA45D82252B924200429311 /* Assets.xcassets */; };
 		8EA45D98252B924300429311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA45D82252B924200429311 /* Assets.xcassets */; };
+		8EA45DA7252B9BB000429311 /* CoreBluetoothMiddleware in Frameworks */ = {isa = PBXBuildFile; productRef = 8EA45DA6252B9BB000429311 /* CoreBluetoothMiddleware */; };
+		8EA45DAB252B9BD700429311 /* ReduxAppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA45DAA252B9BD700429311 /* ReduxAppModule.swift */; };
+		8EA45DAC252B9BD700429311 /* ReduxAppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA45DAA252B9BD700429311 /* ReduxAppModule.swift */; };
+		8EA45DB1252B9BFD00429311 /* CombineRex in Frameworks */ = {isa = PBXBuildFile; productRef = 8EA45DB0252B9BFD00429311 /* CombineRex */; };
+		8EA45DB6252B9C1C00429311 /* CombineRextensions in Frameworks */ = {isa = PBXBuildFile; productRef = 8EA45DB5252B9C1C00429311 /* CombineRextensions */; };
+		8EA45DBB252B9C3500429311 /* LoggerMiddleware in Frameworks */ = {isa = PBXBuildFile; productRef = 8EA45DBA252B9C3500429311 /* LoggerMiddleware */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,7 @@
 		8EA45D8F252B924300429311 /* CoreBluetoothBeacon-Redux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreBluetoothBeacon-Redux.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA45D91252B924300429311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EA45D92252B924300429311 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		8EA45DAA252B9BD700429311 /* ReduxAppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxAppModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA45DB1252B9BFD00429311 /* CombineRex in Frameworks */,
+				8EA45DB6252B9C1C00429311 /* CombineRextensions in Frameworks */,
+				8EA45DBB252B9C3500429311 /* LoggerMiddleware in Frameworks */,
+				8EA45DA7252B9BB000429311 /* CoreBluetoothMiddleware in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +71,7 @@
 				8EA45D80252B924200429311 /* CoreBluetoothBeacon_ReduxApp.swift */,
 				8EA45D81252B924200429311 /* ContentView.swift */,
 				8EA45D82252B924200429311 /* Assets.xcassets */,
+				8EA45DAA252B9BD700429311 /* ReduxAppModule.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -106,6 +118,12 @@
 			dependencies = (
 			);
 			name = "CoreBluetoothBeacon-Redux (iOS)";
+			packageProductDependencies = (
+				8EA45DA6252B9BB000429311 /* CoreBluetoothMiddleware */,
+				8EA45DB0252B9BFD00429311 /* CombineRex */,
+				8EA45DB5252B9C1C00429311 /* CombineRextensions */,
+				8EA45DBA252B9C3500429311 /* LoggerMiddleware */,
+			);
 			productName = "CoreBluetoothBeacon-Redux (iOS)";
 			productReference = 8EA45D87252B924300429311 /* CoreBluetoothBeacon-Redux.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +171,12 @@
 				Base,
 			);
 			mainGroup = 8EA45D7A252B924200429311;
+			packageReferences = (
+				8EA45DA5252B9BB000429311 /* XCRemoteSwiftPackageReference "CoreBluetoothMiddleware" */,
+				8EA45DAF252B9BFD00429311 /* XCRemoteSwiftPackageReference "SwiftRex" */,
+				8EA45DB4252B9C1C00429311 /* XCRemoteSwiftPackageReference "CombineRextensions" */,
+				8EA45DB9252B9C3500429311 /* XCRemoteSwiftPackageReference "LoggerMiddleware" */,
+			);
 			productRefGroup = 8EA45D88252B924300429311 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -188,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EA45D95252B924300429311 /* ContentView.swift in Sources */,
+				8EA45DAB252B9BD700429311 /* ReduxAppModule.swift in Sources */,
 				8EA45D93252B924300429311 /* CoreBluetoothBeacon_ReduxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EA45D96252B924300429311 /* ContentView.swift in Sources */,
+				8EA45DAC252B9BD700429311 /* ReduxAppModule.swift in Sources */,
 				8EA45D94252B924300429311 /* CoreBluetoothBeacon_ReduxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +465,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8EA45DA5252B9BB000429311 /* XCRemoteSwiftPackageReference "CoreBluetoothMiddleware" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/npvisual/CoreBluetoothMiddleware.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		8EA45DAF252B9BFD00429311 /* XCRemoteSwiftPackageReference "SwiftRex" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftRex/SwiftRex.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.4;
+			};
+		};
+		8EA45DB4252B9C1C00429311 /* XCRemoteSwiftPackageReference "CombineRextensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/teufelaudio/CombineRextensions.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		8EA45DB9252B9C3500429311 /* XCRemoteSwiftPackageReference "LoggerMiddleware" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftRex/LoggerMiddleware.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8EA45DA6252B9BB000429311 /* CoreBluetoothMiddleware */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8EA45DA5252B9BB000429311 /* XCRemoteSwiftPackageReference "CoreBluetoothMiddleware" */;
+			productName = CoreBluetoothMiddleware;
+		};
+		8EA45DB0252B9BFD00429311 /* CombineRex */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8EA45DAF252B9BFD00429311 /* XCRemoteSwiftPackageReference "SwiftRex" */;
+			productName = CombineRex;
+		};
+		8EA45DB5252B9C1C00429311 /* CombineRextensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8EA45DB4252B9C1C00429311 /* XCRemoteSwiftPackageReference "CombineRextensions" */;
+			productName = CombineRextensions;
+		};
+		8EA45DBA252B9C3500429311 /* LoggerMiddleware */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8EA45DB9252B9C3500429311 /* XCRemoteSwiftPackageReference "LoggerMiddleware" */;
+			productName = LoggerMiddleware;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8EA45D7B252B924200429311 /* Project object */;
 }

@@ -6,12 +6,21 @@
 //
 
 import SwiftUI
+import SwiftRex
+import CombineRex
+import CombineRextensions
 
 @main
 struct CoreBluetoothBeacon_ReduxApp: App {
+    
+    @StateObject var store = World
+        .origin
+        .store()
+        .asObservableViewModel(initialState: .empty)
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ViewProducer.content(store: store).view()
         }
     }
 }
